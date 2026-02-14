@@ -20,7 +20,7 @@ const Projects = () => {
       description:
         "A responsive personal portfolio website to showcase my skills, projects, and contact details with modern UI design.",
       technologies: "React, CSS, JavaScript",
-      github: "https://github.com/yourusername/portfolio",
+      github: "https://github.com/Surendra290/portfolio1",
     },
     {
       title: "Hire Me - Web Development Website",
