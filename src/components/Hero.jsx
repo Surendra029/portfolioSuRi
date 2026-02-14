@@ -12,7 +12,7 @@ function Hero() {
             Hi, My Name Is
           </p>
 
-          <h1 className="text-2xl md:text-5xl italic leading-tight">
+          <h1 className="text-2xl md:text-5xl font-bold leading-tight">
             Madduri Surendra Nath Yadav
           </h1>
 
