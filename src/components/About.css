@@ -1,0 +1,32 @@
+.about-section {
+  padding: 80px 8%;
+  background-color: #0b0b0b;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-container h2 {
+  font-size: 50px;
+  margin-bottom: auto;
+}
+
+.about-content {
+  display: flex;
+  gap: 100px;
+  color: #9ca3af;
+  line-height: 1.7;
+}
+
+.about-content p {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
