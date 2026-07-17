@@ -10,19 +10,36 @@ const Skills = () => {
     "Expertise": "E2E Encryption, WebSockets, Zero-Knowledge Architecture, Real-time Systems"
   };
 
+  const colors = ["from-blue-500 to-cyan-500", "from-purple-500 to-pink-500", "from-green-500 to-emerald-500", "from-orange-500 to-red-500", "from-indigo-500 to-blue-500", "from-rose-500 to-orange-500"];
+
   return (
-    <section className="py-20 bg-gray-50 text-gray-900" id="skills">
+    <section className="py-20 bg-gradient-to-b from-blue-50 to-white text-gray-900" id="skills">
       <div className="max-w-3xl mx-auto px-6">
-        <h2 className="text-4xl font-black mb-10 tracking-tight">Skills</h2>
-        <div className="space-y-5">
-          {Object.entries(skillCategories).map(([category, skills]) => (
-            <div key={category}>
-              <h3 className="text-sm font-black text-gray-900 mb-2 uppercase tracking-wider">{category}</h3>
-              <p className="text-gray-700 font-medium">{skills}</p>
+        <h2 className="text-4xl font-black mb-12 tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          Skills & Expertise
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {Object.entries(skillCategories).map(([category, skills], index) => (
+            <div 
+              key={category} 
+              className={`bg-gradient-to-br ${colors[index]} p-6 text-white rounded-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group cursor-pointer`}
+              style={{ animation: `fadeIn 0.6s ease-out ${index * 0.1}s both` }}
+            >
+              <h3 className="text-lg font-black mb-3 uppercase tracking-wider group-hover:scale-110 inline-block transition-transform duration-300">
+                {category}
+              </h3>
+              <p className="text-sm leading-relaxed font-medium group-hover:text-white/95 transition-all">{skills}</p>
             </div>
           ))}
         </div>
       </div>
+
+      <style>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </section>
   );
 };
