@@ -34,7 +34,7 @@ function Hero() {
             <p className="text-xs sm:text-sm font-black text-blue-400 uppercase tracking-widest mb-2">
               🚀 Full Stack Developer • Java • React • Spring Boot
             </p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-black mb-3 tracking-tight bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent" style={{ fontFamily: "'Sora', sans-serif", fontWeight: "700", letterSpacing: "-1px", WebkitFontSmoothing: "antialiased", MozOsxFontSmoothing: "grayscale" }}>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-black mb-3 tracking-tight bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent" style={{ fontFamily: "'ATC Agate', sans-serif", fontWeight: "700", letterSpacing: "-1px", WebkitFontSmoothing: "antialiased", MozOsxFontSmoothing: "grayscale" }}>
               Surendra M
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-blue-300 mb-4">
