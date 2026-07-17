@@ -11,12 +11,12 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-gray-900 via-blue-900 to-gray-900 text-white relative overflow-hidden">
+    <section id="contact" className="w-full py-24 bg-gradient-to-b from-gray-900 via-blue-900 to-gray-900 text-white relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500 rounded-full opacity-20 blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
 
-      <div className="max-w-3xl mx-auto text-center px-6 relative z-10">
+      <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-48 text-center relative z-10">
         <h2 className="text-5xl font-black mb-4 tracking-tight bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
           Let's Build Something Epic 🚀
         </h2>

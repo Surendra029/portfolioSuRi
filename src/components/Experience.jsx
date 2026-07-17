@@ -39,8 +39,8 @@ const Experience = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-blue-50 to-white text-gray-900" id="experience">
-      <div className="max-w-3xl mx-auto px-6">
+    <section className="w-full py-20 bg-gradient-to-b from-blue-50 to-white text-gray-900" id="experience">
+      <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
         <h2 className="text-4xl font-black mb-12 tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           Experience
         </h2>

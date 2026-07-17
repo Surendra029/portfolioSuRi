@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 text-gray-900" id="about">
-      <div className="max-w-3xl mx-auto px-6">
+    <section className="w-full py-20 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 text-gray-900" id="about">
+      <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
         <h2 className="text-4xl font-black mb-8 tracking-tight bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-pulse">
           About Me
         </h2>

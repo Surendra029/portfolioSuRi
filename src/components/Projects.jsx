@@ -32,8 +32,8 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-purple-50 text-gray-900" id="projects">
-      <div className="max-w-3xl mx-auto px-6">
+    <section className="w-full py-20 bg-gradient-to-b from-white to-purple-50 text-gray-900" id="projects">
+      <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
         <h2 className="text-4xl font-black mb-12 tracking-tight bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
           Featured Projects
         </h2>
