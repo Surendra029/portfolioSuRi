@@ -1,70 +1,61 @@
 import React from "react";
-import "./Projects.css";
-import irrigationImg from "../assets/smart-irrigation-tech.jpg";
-import profileImg from "../assets/Portfolio.png";
-import hiremeImg from "../assets/HireMe.png"; // You can change image later
 
 const Projects = () => {
   const projects = [
     {
+      title: "Secure E2EE Burner Chat",
+      period: "2024 – 2025",
+      highlight: "Real-time encrypted messaging at scale",
+      description: "Engineered end-to-end encrypted messaging with zero server-side logs. Implemented RSA-OAEP via Web Crypto API ensuring absolute client-side confidentiality. Zero-knowledge architecture with MongoDB Atlas for complete data privacy.",
+      tech: "React.js, Node.js, Express.js, Socket.io, MongoDB Atlas",
+      github: "https://github.com/Surendra029",
+    },
+    {
       title: "Smart Irrigation System",
-      image: irrigationImg,
-      description:
-        "A smart irrigation system that automatically controls water supply based on soil moisture levels to reduce water wastage and improve efficiency.",
-      technologies: "React, JavaScript, Node.js, IoT",
-      github: "https://github.com/yourusername/irrigation-project",
+      period: "2024",
+      highlight: "20% water waste reduction through IoT",
+      description: "Deployed closed-loop IoT system with Python predictive modeling. Automated water supply control based on evapotranspiration analysis. Delivered measurable environmental impact in agricultural automation.",
+      tech: "Python, Arduino, MySQL, REST API",
+      github: "https://github.com/Surendra029",
     },
     {
-      title: "Personal Portfolio Website",
-      image: profileImg,
-      description:
-        "A responsive personal portfolio website to showcase my skills, projects, and contact details with modern UI design.",
-      technologies: "React, CSS, JavaScript",
-      github: "https://github.com/Surendra029/portfolioSuRi",
-    },
-    {
-      title: "Hire Me - Web Development Website",
-      image: hiremeImg,
-      description:
-        "A professional 'Hire Me' web development website designed to attract clients and showcase services like frontend development, responsive design, and UI creation.",
-      technologies: "React, HTML, CSS, JavaScript",
-      github: "https://github.com/yourusername/hireme-project",
+      title: "Enterprise Full Stack Applications",
+      period: "2024",
+      highlight: "3 production systems. 15% faster processing.",
+      description: "Architected 3 enterprise applications using Spring MVC. Optimized normalized MySQL schemas and complex queries (Joins, Aggregates, Stored Procedures)—accelerated data retrieval by 25%. Reduced post-deployment bugs by 15% through rigorous testing.",
+      tech: "Java, Spring MVC, MySQL, REST APIs",
+      github: "https://github.com/Surendra029",
     },
   ];
 
   return (
-    <section className="projects-section" id="projects">
-      <h2 className="projects-heading">My Projects</h2>
+    <section className="py-20 bg-white text-gray-900" id="projects">
+      <div className="max-w-3xl mx-auto px-6">
+        <h2 className="text-4xl font-black mb-10 tracking-tight">Projects</h2>
 
-      <div className="projects-container">
-        {projects.map((project, index) => (
-          <div className="project-card" key={index}>
-            <img
-              src={project.image}
-              alt={project.title}
-              className="project-image"
-            />
-
-            <h3 className="project-title">{project.title}</h3>
-
-            <p className="project-description">
-              {project.description}
-            </p>
-
-            <p className="project-tech">
-              <strong>Technologies:</strong> {project.technologies}
-            </p>
-
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              className="github-btn"
-            >
-              View on GitHub
-            </a>
-          </div>
-        ))}
+        <div className="space-y-10">
+          {projects.map((project, index) => (
+            <div key={index} className="border-l-4 border-gray-900 pl-6">
+              <div className="flex justify-between items-start mb-2">
+                <h3 className="text-xl font-black">{project.title}</h3>
+                <span className="text-xs font-bold text-gray-600 uppercase tracking-wider">{project.period}</span>
+              </div>
+              <p className="text-sm font-bold text-gray-900 mb-3">{project.highlight}</p>
+              <p className="text-gray-700 leading-relaxed mb-3">{project.description}</p>
+              <p className="text-gray-600 text-sm mb-4">
+                <span className="font-bold">Tech Stack:</span> {project.tech}
+              </p>
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                className="font-bold text-gray-900 hover:text-gray-600 transition text-sm"
+              >
+                View Code →
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

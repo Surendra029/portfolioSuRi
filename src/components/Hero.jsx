@@ -1,33 +1,35 @@
 import React from "react";
-import profileImg from "../assets/profile1.jpeg";
+import profileImg from "../assets/profile.jpg";
 
 function Hero() {
   return (
-    <section className="min-h-screen pt-24 bg-black text-white flex items-center">
-      <div className="w-full px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-12">
-
-        {/* Left Content */}
-        <div className="text-center md:text-left">
-          <p className="text-blue-500 mb-3 text-2xl md:text-4xl">
-            Hi, My Name Is
-          </p>
-
-          <h1 className="text-2xl md:text-5xl font-bold leading-tight">
-            Madduri Surendra Nath Yadav
-          </h1>
-
-          <p className="mt-4 text-gray-400 text-lg md:text-2xl">
-            Java Full Stack Developer | React Developer | Problem Solver
-          </p>
+    <section className="py-32 bg-white text-gray-900">
+      <div className="max-w-3xl mx-auto px-6">
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          {/* Image */}
+          <div className="flex-shrink-0">
+            <div className="w-40 h-40 md:w-44 md:h-44 rounded-full overflow-hidden border-2 border-gray-900 flex items-center justify-center bg-gray-100">
+              <img
+                src={profileImg}
+                alt="Surendra"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+          </div>
+          
+          {/* Content */}
+          <div className="flex-1">
+            <h1 className="text-5xl md:text-6xl font-black mb-3 tracking-tight">
+              Surendra M
+            </h1>
+            <p className="text-lg md:text-xl font-bold text-gray-900 mb-3">
+              Full Stack Developer
+            </p>
+            <p className="text-base md:text-lg text-gray-600">
+              Architecting production-grade applications. 25% faster queries. 20% reduced latency. Enterprise-ready solutions.
+            </p>
+          </div>
         </div>
-
-        {/* Right Image */}
-        <img
-          src={profileImg}   
-          alt="profile"
-          className="w-40 h-40 md:w-56 md:h-56  border-4 "
-        />
-
       </div>
     </section>
   );

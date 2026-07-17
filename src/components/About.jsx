@@ -1,27 +1,16 @@
 import React from "react";
-import "./About.css";
 
 const About = () => {
   return (
-    <section className="about-section" id="about">
-      <div className="about-container">
-        <h2 className="about-title">About Me</h2>
-
-        <div className="about-content">
-          <p>
-            I am a passionate developer with a strong interest in building
-            clean, functional, and user-friendly web applications. My journey
-            in technology began with curiosity about how systems work, and it
-            has grown into a dedication to solving real-world problems through code.
-          </p>
-
-          <p>
-            When I'm not coding, I enjoy exploring new technologies,
-            improving my problem-solving skills, and contributing to projects
-            that help me grow as a developer. I believe in continuous learning
-            and staying updated with modern development practices.
-          </p>
-        </div>
+    <section className="py-20 bg-white text-gray-900" id="about">
+      <div className="max-w-3xl mx-auto px-6">
+        <h2 className="text-4xl font-black mb-8 tracking-tight">About</h2>
+        <p className="text-lg text-gray-800 leading-relaxed font-medium">
+          I architect scalable full-stack applications that deliver measurable results. 
+          Specialized in Spring Boot, React.js, and microservices design. 
+          Proven expertise in optimizing system performance—reduced processing time by 15%, accelerated data retrieval by 25%, and slashed latency by 20%. 
+          I don't just code; I build production systems that work at scale.
+        </p>
       </div>
     </section>
   );
