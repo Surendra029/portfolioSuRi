@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Contact = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
   const contactOptions = [
     { icon: "✉️", label: "Send Email", href: "mailto:surendramadduri665@gmail.com", color: "from-blue-500 to-cyan-500" },
     { icon: "💼", label: "LinkedIn", href: "https://linkedin.com/in/madduri-surendra-nath", color: "from-blue-600 to-blue-700" },
@@ -36,8 +34,6 @@ const Contact = () => {
               href={option.href}
               target={option.href.startsWith("http") ? "_blank" : undefined}
               rel={option.href.startsWith("http") ? "noreferrer" : undefined}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
               className={`group relative overflow-hidden px-6 py-6 font-black text-lg transition-all duration-300 transform hover:scale-110`}
               style={{ animation: `scaleIn 0.6s ease-out ${index * 0.1}s both` }}
             >

@@ -2,26 +2,26 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 w-full bg-[#0b0b0b] border-b border-blue-500 z-50">
-      <div className="flex justify-between items-center px-6 md:px-16 py-4">
+    <nav className="border-b border-neutral-200">
+      <div className="container nav">
 
         {/* Logo */}
-        <h2 className="text-xl md:text-2xl font-semibold text-gray-300">
-          SuRi
+        <h2 className="brand">
+          SM.
         </h2>
 
         {/* Links */}
-        <ul className="hidden md:flex gap-8 text-lg font-medium">
-          <li className="hover:text-blue-500 cursor-pointer">
+        <ul className="nav-links">
+          <li>
             <a href="#about">About</a>
           </li>
-          <li className="hover:text-blue-500 cursor-pointer">
+          <li>
             <a href="#skills">Skills</a>
           </li>
-          <li className="hover:text-blue-500 cursor-pointer">
+          <li>
             <a href="#projects">Projects</a>
           </li>
-          <li className="hover:text-blue-500 cursor-pointer">
+          <li>
             <a href="#contact">Contact</a>
           </li>
         </ul>
